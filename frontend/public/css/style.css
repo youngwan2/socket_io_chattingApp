@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+}
+.container {
+  display: flex;
+  border-radius: 10px;
+  position: relative;
+  flex-direction: column;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 500px;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #b2c7da;
+}
+
+#form {
+  display: flex;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 3px 0;
+  background-color: white;
+}
+#form input {
+  border-radius: 5px;
+  border: none;
+  max-width: 90%;
+  width: 100%;
+  padding: 15px 0;
+}
+
+#form button {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(246 228 46);
+}
+
+.welcome_message {
+  transition: 1s;
+  width: 440px;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  top: 5rem;
+  background-color: ghostwhite;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px 2px rgb(198, 198, 198);
+  left: 50%;
+  transform: translate(-50%);
+  animation: appear 1s 1;
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-60%);
+  }
+}
+
+.container.main li {
+  list-style: none;
+  max-width: 70%;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 5px 0;
+  position: relative;
+  right: -70px;
+  text-align: right;
+  background-color: gold;
+}
+
+/* 시간 스판 */
+.container.main .time_span {
+  position: absolute;
+  left: -5rem;
+  bottom: 5px;
+  font-size: 13px;
+}
+
+/* 이름 스판 */
+.container.main .profile_span {
+  position: absolute;
+  right: -2.8rem;
+  background-color: black;
+  border-radius: 50%;
+  width: 40px;
+  top: 0;
+  height: 40px;
+}
